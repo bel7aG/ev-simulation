@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light Theme */
+    --background: 220 20% 99%; /* Very light grey, almost white: #fcfcfd */
+    --foreground: 220 10% 20%; /* Dark grey for text: #2d3033 */
+
+    --card: 0 0% 100%; /* White for cards: #ffffff */
+    --card-foreground: 220 10% 20%; /* Dark grey text on cards */
+
+    --popover: 0 0% 100%; /* White for popovers */
+    --popover-foreground: 220 10% 20%;
+
+    --primary: 161 81% 61%; /* #4becb9 */
+    --primary-foreground: 0 0% 0%; /* #000 */
+
+    --secondary: 220 15% 96.1%; /* Lighter grey for secondary elements: #f4f5f6 */
+    --secondary-foreground: 220 10% 30%; /* Darker grey for text on secondary */
+
+    --muted: 220 15% 96.1%; /* Same as secondary for muted backgrounds */
+    --muted-foreground: 220 10% 45%; /* Medium grey for muted text: #6a6d70 */
+
+    --accent: 220 15% 96.1%;
+    --accent-foreground: 220 10% 25%;
+
+    --destructive: 0 72.2% 50.6%; /* Red */
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 15% 90%; /* Very subtle light grey border: #e2e4e5 */
+    --input: 0 0% 100%; /* White for inputs */
+    --ring: 28 100% 55%; /* #ff8800  */
+    --radius: 0.5rem; /* Keep existing radius */
+
+    /* Chart colors */
+    --chart-1: 22 90% 60%; /* Orange */
+    --chart-2: 210 80% 60%; /* Blue (secondary chart color) */
+    /* Add more if needed */
+    --chart-grid: 220 10% 90%; /* Very light grey for chart grids */
+  }
+
+  .dark {
+    --background: 0 0% 0%; /* #000000 */
+    --foreground: 0 0% 98%; /* #fafafa */
+
+    --card: 0 0% 7%; /* #121212 */
+    --card-foreground: 0 0% 98%; /* #fafafa */
+
+    --popover: 0 0% 5%; /* #0d0d0d */
+    --popover-foreground: 0 0% 98%; /* #fafafa */
+
+    /* Primary actions (e.g., main buttons, header filters) */
+    --primary: 161 81% 61%; /* #4becb9 */
+    --primary-foreground: 0 0% 0%;
+
+    /* Secondary actions (e.g., reset button, active tab bg, hover states) */
+    --secondary: 0 0% 13%; /* #212121 */
+    --secondary-foreground: 0 0% 98%; /* #fafafa */
+
+    --muted: 0 0% 13%; /* #212121 */
+    --muted-foreground: 0 0% 53%; /* #878787 */
+
+    --accent: 0 0% 13%; /* #212121 */
+    --accent-foreground: 0 0% 98%; /* #fafafa */
+
+    --destructive: 0 62.8% 50.6%; /* Keep existing red */
+    --destructive-foreground: 0 0% 98%; /* #fafafa */
+
+    --border: 0 0% 20%; /* #333333 */
+    --input: 0 0% 8%; /* #141414 (Dark input background) */
+    --ring: 28 100% 55%; /* #ff8800  */
+
+    --chart-1: 28 100% 55%; /* #ff8800  */
+    --chart-2: 205 100% 55%; /* #1a90ff  */
+    --chart-grid: 0 0% 20%; /* #333333 (Subtle dark grid lines) */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply relative box-border min-w-0 border-border bg-background text-foreground ease-in-out;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Custom scrollbar styling for a more integrated dark theme look */
+@layer utilities {
+  ::-webkit-scrollbar {
+    width: 6px; /* Slimmer scrollbar */
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+  }
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--border));
+    border-radius: var(--radius);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--muted-foreground) / 0.5);
+  }
+}

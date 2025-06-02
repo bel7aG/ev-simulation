@@ -1,5 +1,15 @@
 # EV Charging Station Simulation & Dashboard
 
+## Live
+
+- [https://ev.bel.baby](https://ev.bel.baby)
+
+![Dark Mode Overview](./docs/assets/dark-overview.png)
+
+-
+
+![Light Mode Overview](./docs/assets/light-overview.png)
+
 This project simulates the operation of an Electric Vehicle (EV) charging station and provides a web-based dashboard to visualize key performance indicators and energy consumption patterns. It's built with Next.js (App Router + RSC), TypeScript, and Tailwind CSS, Framer Motion, featuring a detailed simulation backend and an interactive frontend.
 
 ## Core Functionalities

@@ -36,15 +36,6 @@ export default function DashboardPage() {
     chargepointPowerKw: 11,
   }
 
-  // The useEffect for initial run has been REMOVED.
-  // The useEffect for storing lastSubmittedParamsRef.current after results are available is fine.
-  // It will only run after the first manual submission populates simulationResults.
-  // useEffect(() => {
-  //   if (simulationResults && !lastSubmittedParamsRef.current) {
-  //     lastSubmittedParamsRef.current = simulationResults.inputsUsed;
-  //   }
-  // }, [simulationResults]);
-
   const handleRunSimulation = async (values: SimulationInputParameters): Promise<void> => {
     // No 'isInitialRun' parameter needed anymore for this function here
     if (lastSubmittedParamsRef.current && isEqual(values, lastSubmittedParamsRef.current)) {

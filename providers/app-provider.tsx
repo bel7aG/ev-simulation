@@ -11,8 +11,8 @@ import { Toaster as SonnerToaster } from 'sonner'
 
 interface AppProviderProps {}
 /**
- * @param {React.ReactNode} props.children - Child elements to be themed.
- * @returns {JSX.Element} The theme provider wrapping its children.
+ * @param {React.ReactNode} props.children - Child elements
+ * @returns {JSX.Element} The app provider wrapping its children.
  */
 export function AppProvider({ children, ...props }: PropsWithChildren<AppProviderProps>) {
   return (

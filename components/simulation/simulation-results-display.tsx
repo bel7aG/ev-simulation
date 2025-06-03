@@ -165,7 +165,6 @@ export function SimulationResultsDisplay({ results }: SimulationResultsDisplayPr
             </TabsList>
 
             <AnimatePresence mode="wait">
-              {' '}
               {/* This is the existing AnimatePresence for tabs */}
               <motion.div
                 key={activeTab} // Key for tab content

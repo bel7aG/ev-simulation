@@ -80,7 +80,6 @@ export function ChartCard({ title, description, children, controls }: ChartCardP
         </div>
       </CardHeader>
       <CardContent className="-mt-2 pb-4 pl-2 pr-4">
-        {' '}
         {/* Adjust padding for charts */}
         {children}
       </CardContent>

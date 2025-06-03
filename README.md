@@ -1,20 +1,22 @@
-# EV Charging Station Simulation & Dashboard
+# EV Charging Station Simulation & Dashboard 🎨
 
-## Live
-
-- [https://ev.bel.baby](https://ev.bel.baby)
-
-![Dark Mode Overview](./docs/assets/dark-overview.png)
-
--
-
-![Light Mode Overview](./docs/assets/light-overview.png)
+## Project Overview
 
 This project simulates the operation of an Electric Vehicle (EV) charging station and provides a web-based dashboard to visualize key performance indicators and energy consumption patterns. It's built with Next.js (App Router + RSC), TypeScript, and Tailwind CSS, Framer Motion, featuring a detailed simulation backend and an interactive frontend.
 
-## Core Functionalities
+- Production - [https://ev.bel.baby](https://ev.bel.baby) for quick demo 🚀.
 
-### 1. EV Charging Simulation (`lib/simulation/`)
+### Dark Mode ✨
+
+![Dark Mode Overview](./docs/assets/dark-overview.png)
+
+### Light Mode ✨
+
+![Light Mode Overview](./docs/assets/light-overview.png)
+
+## Core Functionalities 🧐
+
+### 1. EV Charging Simulation (`lib/simulation/`) 📸
 
 - **Object-Oriented Design**: The simulation is built using classes representing EVs, Chargepoints, Stations, and Statistics.
 - **Configurable Parameters**:
@@ -28,7 +30,7 @@ This project simulates the operation of an Electric Vehicle (EV) charging statio
 - **Statistics Collection**: Tracks total energy consumed, actual maximum power demand, and concurrency factor.
 - **Task 1 Validation**: Includes a specific script execution within `lib/simulation/index.ts` to validate against the parameters and expected outcomes of "Task 1" (as defined in the project's initial requirements).
 
-### 2. Interactive Frontend Dashboard (`app/` & `components/`)
+### 2. Interactive Frontend Dashboard (`app/` & `components/`) 📸
 
 - **Responsive Design**: Adapts to various screen sizes, inspired by Vercel's Observability UI.
 - **Theme Toggle**: Supports light and dark modes.
@@ -43,7 +45,7 @@ This project simulates the operation of an Electric Vehicle (EV) charging statio
 - **Smooth Tab Transitions**: Uses Framer Motion for animated transitions between tabs.
 - **Toast Notifications**: Provides feedback for simulation status (success, failure, no changes) using Sonner.
 
-## Tech Stack
+## Tech Stack 🥅
 
 - **Framework**: Next.js 15 (App Router)
 - **Language**: TypeScript
@@ -52,7 +54,7 @@ This project simulates the operation of an Electric Vehicle (EV) charging statio
 - **Animation**: Framer Motion (for now only when switching between tabs)
 - **Linting/Formatting**: ESLint, Prettier (assumed, standard for Next.js projects)
 
-## Project Structure
+## Project Structure 💡
 
 ```
 .
@@ -90,7 +92,7 @@ This project simulates the operation of an Electric Vehicle (EV) charging statio
 └── tsconfig.json
 ```
 
-## Setup and Installation
+## Setup and Installation 🧑‍💻
 
 1.  **Clone the repository**:
 
